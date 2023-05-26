@@ -1,0 +1,92 @@
+<!-- ctrl+ö yorum satırı  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+ <form action="/food">
+   <label for="kullanıcıadı">Kullanıcı Adı:</label>
+   <input type="text" placeholder="Kullanıcı Adı" name="Kullanıcı Adı" id="kullanıcıadı" >
+   <label for="sifre">Sifre:</label>
+   <input type="password" placeholder="Şifre" name="sifre" id="sifre" >
+   <label for="renksec"> Renk Seçiniz:</label>
+   <input type="color" placeholder="color" name="renk" id="renksec">
+   <label for="sayıgir"> Sayı Giriniz:</label>
+   <input type="number" placeholder="Sayı Giriniz" name="number" id="number">
+   <button type="button">Lütfen formu gönder.</button>
+   <button type="reset">Lütfen formu gönderme..!!!</button>
+   </div>
+ <button>Giriş</button>
+ <br><br><br><br><br><br><br><br>
+  </form>
+
+  <form action="https://www.google.com/search">
+  <label for="google"></label>
+  <input type="text" id="google" name="webhp">
+  <button>Google</button>
+  
+</form>
+    
+  <form action="https://www.youtube.com/search_query=">
+    <label for="Youtube"></label>
+    <input type="text" id="youtube" name="q">
+    <button>youtube</button>
+  </form>
+   
+  <br><br><br><br><br><br>
+  <form action="/onay">
+  <div>
+      <label for="onay">Kabul Ediyorum</label>
+        <input type="checkbox"name="tos" id="onay" checked>
+    <p>
+        <label for="xs">XS:</label>
+        <input type="radio"name="size" value="xs">
+        <label for="s">S:</label>
+       <input type="radio"name="size" value="s">
+       <label for="m">M:</label>
+       <input type="radio"name="size" value="m">
+    </p>
+       <p>
+        <label for="beden">Bedenini Seç</label>
+        <select name="beden" id="beden">
+            <option value="Xs">Xs</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+
+        </select>
+       </p>
+       <p>
+        <label for="ses">Ses Seviyesi</label>
+        <input type="range" id="Ses" min="0" max="10" name="sesseviyesi">
+    </p> 
+    <p>
+        <label for="">Özel İstek</label><br>
+        <textarea name="istek" id="istek" cols="30" rows="10"placeholder="Özel İstek"></textarea>
+    </p>
+        <button>Gönder</button>
+    </div>
+    </form>
+    <h2>Form</h2>
+    <form action="">
+        <label for="isim">İsim Giriniz</label>
+        <input type="text" name="isim" id="isim" required >
+        <button>Gönder</button>
+    
+
+    </form>
+    <p>
+        <label for="last">Soyisim Giriniz</label>
+        <input type="text" id="last" name="last">
+    </p>
+    <p>
+        <label for="url">URL DOĞRULAMA</label>
+        <input type="url">
+    </p>
+</body>
+</html>

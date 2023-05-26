@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    background-color: #DAAB90;
+    padding: 20px 50px 150px;
+    font-size: 13px;
+    text-align: center;
+    background: -webkit-linear-gradient(to left, #FFC9AA , #D4916A);
+    background: linear-gradient(to left, #FFC9AA , #D4916A);
+   
+}
+.header{
+    background-color: #FFC9AA;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin:2rem 4%;
+    position: sticky;
+    top: 0;
+    border-radius: 30rem;
+}
+
+/* MENÜ */
+ul {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+ul li{
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: #FFC9AA;
+    color: #551F00;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+
+ul li ul li { 
+    background: #551F00; 
+    display: block; 
+    color: black;
+    text-shadow: 0 -1px 0 #000;
+    margin-top: 20px;
+    border-radius: 20rem;
+  }
+  ul li ul li:hover { background: #FFC9AA;}
+  ul li:hover ul {
+    display:block;
+    opacity: 2;
+    visibility: visible;
+    border-radius: 30rem;
+ 
+  }
+  ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+
+    }
+ul li a{
+
+    display:block;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    transition: all .5s ease;
+}
+ul li a:hover{
+    padding-bottom: 3px;
+    color:#803C15 ;
+    border-bottom: 1px solid #803C15;
+
+}
+.meta-info{
+    text-align: left;
+}
+.header .logo img{
+    height: 7rem;
+}
+/* MENÜ BİTİŞ*/
+
+/* İNDEX ORTA MAİN */
+
+.orta .bolum1{
+    margin-top:20px;
+    border:10px solid #551F00;
+    padding:20px;
+}
+
+.orta .bolum1 img{
+    display: block;
+    width: 100%;
+}
+.orta .bolum2 img{
+    width: 300px;
+    height: 300px;
+}
+
+.orta .bolum2{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    border:5px solid #551F00;
+}
+.orta .bolum2 .kutu{
+    flex-basis: 290px;
+}
+
+.orta .bolum2 .kutu h2{
+    font-size: 2rem;
+}
+
+.orta .bolum2 .kutu p{
+    font-size: 1.6rem;
+}
+
+
+.orta .bolum3{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.orta .bolum3 h1{
+    font-size:2.5rem;
+}
+
+.orta .bolum3 p{
+    font-size:1.6rem;
+}
+/* İNDEX ORTA MAİN BİTİŞ*/
+/* İLETİŞİM BÖLÜMÜ */
+#contact{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.title{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-left{
+    width: 40%;
+    padding: 3rem;
+}
+.cont-top{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #FFC9AA;
+}
+.cont-element{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.cont-element i{
+    color: #FFC9AA;
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #FFC9AA;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+.cont-element:hover i{
+    background-color: #551F00;
+    color: #FFC9AA;
+}
+.cont-element a{
+    color: #FFC9AA;
+    text-decoration: none;
+}
+.cont-bottom{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-bottom a{
+    color: #551F00;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #FFC9AA;
+    border-radius: 50%;
+}
+.cont-bottom a:hover{
+    color: #FFC9AA;
+    background-color: #551F00;
+}
+
+
+.cont-right{
+    width: 60%;
+    padding: 3rem;
+}
+.cont-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-right form input, textarea, button{
+    width: 100%;
+    margin: 1rem 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid #803C15;
+    color: #D4916A; 
+    transition: all 0.4s ease;
+}
+.cont-right form button{
+    background-color: #FFC9AA;
+    color: #551F00;
+    cursor: pointer;
+}
+.cont-right form button:hover{
+    background-color: #551F00;
+    color: #FFC9AA;
+}
+.cont-right form input:hover, textarea:hover{
+    color: #FFC9AA;
+    background-color: #551F00;
+}
+.cont-right form input:focus, textarea:focus{
+    color: #FFC9AA;
+    background-color: #551F00;
+}
+/* İLETİŞİM BÖLÜMÜ SONU */
